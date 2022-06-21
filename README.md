@@ -16,3 +16,12 @@ Then I included a minimal controller, demonstrating the issue and deleted unnecc
 ## How to run this
 
 Just use `dotnet run` inside of the cloned folder.
+Navigate your browser to https://localhost:7289/swagger/index.html
+
+## How to run this with docker
+
+```
+docker build -t swagger-ui-bug-demo .
+docker run --rm -p 7289:80 swagger-ui-bug-demo
+```
+Navigate your browser to http://localhost:7289/swagger/index.html
